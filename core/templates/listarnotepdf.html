@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h1>
+  Lista de Notebooks
+</h1>
+<table> <!--style="border: 1px dotted blue"-->
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for f in notebook %}
+    <tr>
+      <td>{{ f }}</td>
+      <td>{{ f.preco }}</td>
+      <td>{{ f.descricao }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+

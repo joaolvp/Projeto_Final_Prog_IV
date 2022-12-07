@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block conteudo %}
+    <div class="container">
+        <div class="item-img">
+            <img src="{{ notebook.imagem.url }}" alt="Imagem do Modelo">
+        </div>
+        <div class="container">
+            <h1>
+                {{ notebook.nome }}
+            </h1>
+            <h4>
+                {{ notebook.descricao }}
+            </h4>
+            <h4>{{ notebook.preco }} R$</h4>
+        </div>
+        <div class="container">
+            <h5>{{ notebook.texto }}</h5>
+        </div>
+    </div>
+{% endblock %}
